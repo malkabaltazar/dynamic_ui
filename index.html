@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic User Interface Interactions</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div id="hamburger"><span>&#9776;</span></div>
+      <ul class="navbar">
+        <li><span class="close">&times;</span></li>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li><span class="toggle">more &#x25BE;</span>
+          <ul class="dropdown">
+            <li>item1</li>
+            <li>item2</li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <div class="slider">
+      <div class="container">
+        <div id="images">
+          <img src="unknown.jpeg" alt="flower">
+          <img src="unknown-1.jpeg" alt="birds">
+          <img src="unknown-2.jpeg" alt="forest">
+          <img src="unknown-3.jpeg" alt="swan">
+        </div>
+      </div>
+      <span id="circles">
+        <a>&#x25C0;</a>
+        <a>&#x25CF;</a>
+        <a>&#x25CB;</a>
+        <a>&#x25CB;</a>
+        <a>&#x25CB;</a>
+        <a>&#x25B6;</a>
+      </span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

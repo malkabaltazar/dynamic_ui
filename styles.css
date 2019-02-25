@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@media (max-width: 767px) {
+  #hamburger {
+    background-color: teal;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    width: calc(100vw - 10px);
+  }
+
+  .close {
+    float: right;
+    position: relative;
+    z-index: 2;
+  }
+
+  .close:hover, .close:focus,
+  #hamburger > span:hover, #hamburger > span:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: none;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: teal;
+    color: white;
+    height: 100vh;
+    width: 100px;
+    overflow: scroll;
+  }
+
+  .navbar li {
+    position: relative;
+    white-space: nowrap;
+    padding: 5px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    list-style: square;
+    background-color: teal;
+    color: white;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #hamburger, .close { display: none; }
+
+  .navbar {
+    background-color: teal;
+  }
+
+  .navbar, .dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    position: relative;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    padding: 0;
+  }
+}
+
+@media (min-width:1024px) {
+}
+
+.slider {
+  width: 300px;
+  margin: 100px auto;
+}
+
+.container {
+  width: 300px;
+  height: 180px;
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 300px;
+  height: 180px;
+}
+
+.slider span {
+  display: block;
+  text-align: center;
+}
+
+a { cursor: pointer; }
